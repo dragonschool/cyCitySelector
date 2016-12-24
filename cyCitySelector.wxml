@@ -1,0 +1,16 @@
+< view class = "section" >
+  <picker disabled="{{disableProvince}}" bindchange="selectedProvince" value="{{index}}" range="{{arrayProvince}}">
+    <view style="{{disableProvince?'color: lightgray':'color: black'}}" class="picker">
+      {{province}}
+    </view > </picker>
+    <picker disabled="{{disableCity}}" bindchange="selectedCity" value="{{index}}" range="{{arrayCity}}">
+    <view style="{{disableCity?'color: lightgray':'color: black'}}" class="picker">
+      {{city}}
+    </view > </picker>
+    <picker disabled="{{disableDistrict}}" bindchange="selectedDistrict" value="{{index}}" range="{{arrayDistrict}}">
+    <view wx:if="{{enabledDistrict}}" style="{{disableDistrict?'color: lightgray':'color: black'}}" class="picker">
+      {{district}}
+    </view > </picker>
+</view > 
+<map id = "map" include - points = "{{markers}}"  longitude="{{longitude}}" latitude="{{latitude}}" scale = "{{mapScaleRate}}" controls = "{{controls}}" bindcontroltap = "controltap" markers = "{{markers}}" bindmarkertap = "markertap" bindregionchange = "regionchange" show - location style = "top:{{mapTop}}px;width: 100%; height: {{mapHeight}}px;" > </map>
+
