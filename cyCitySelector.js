@@ -33,15 +33,6 @@ Page({
         var _num = num.toFixed(bit + 1);
         return _num.substr(0, _num.length - 1)
     },
-
-    onShareAppMessage: function () {
-        return {
-            title: 'cy',
-            desc: '哈哈~',
-            path: '/page/user?id=123'
-        }
-    }
-    ,
     //根据经纬度查找城市
     findCity: function (Lo, La) {
         var lo = "";
