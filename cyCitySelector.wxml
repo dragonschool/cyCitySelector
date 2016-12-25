@@ -25,5 +25,5 @@
 <button disabled="{{!enabledFinishedButton}}" bindtap="bindFinished">完成</button>
 
 <map id = "map" include - points = "{{markers}}"  longitude="{{longitude}}" latitude="{{latitude}}" scale = "{{mapScaleRate}}" controls = "{{controls}}" bindcontroltap = "controltap" markers = "{{markers}}" bindmarkertap = "markertap" bindregionchange = "regionchange" show - location style = "top:{{mapTop}}px;width: 100%; height: {{mapHeight}}px;" > </map>
-
+ 
  
