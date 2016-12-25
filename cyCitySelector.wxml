@@ -17,7 +17,7 @@
 
 <view wx:if="{{enabledHotCity}}">
   <text>热门城市：</text>
-  <view bindtap="bindSelectHotCity" data-index="{{index}}" wx:key="{{hotSelectCityList}}" wx:for-item="{{index}}">
+  <view bindtap="bindSelectHotCity" data-index="{{index}}" wx:for="{{hotSelectCityList}}" wx:for-item="{{index}}">
   {{hotSelectCityList[index].C}}
   </view>
 </view>
