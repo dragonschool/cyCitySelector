@@ -94,21 +94,19 @@ Page({
             }
         }
     },
-    onShow: function () {
-        console.log(22)
-    },
     onLoad: function (options) {
-        console.log(11);
+  
         var app = getApp();
         //进入前先清空全局数据
         app.globalData.cyCitySelectorInfo = {};
 
         //设置用于显示省市区的托盘的高度，使MAP不被遮住
         var res = wx.getSystemInfoSync();
-        var trayHeight = 0;
+        //落实View的调试后设置该值，以确保地图撑满
+        var trayHeight = 78;
         this.setData({
-            mapTop: trayHeight,
-            mapHeight: res.windowHeight - trayHeight - 100,
+            mapTop: 0,
+            mapHeight: res.windowHeight - trayHeight ,
         })
 
         //获得传入的参数
