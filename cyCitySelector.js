@@ -17,7 +17,7 @@ Page({
         disableProvince: false,
         disableCity: false,
         disableDistrict: false,
-        arrayProvince: [],
+        arrayProvince: [], 
         arrayCity: [],
         arrayDistrict: [],
         indexProvince: 0,
@@ -357,7 +357,7 @@ Page({
 
         //写入全局数据
         app.globalData.cyCitySelectorInfo = res;
-
+        app.setCity(this.data.city);
         //退回上一页
         wx.navigateBack({
             delta: 1, // 回退前 delta(默认为1) 页面

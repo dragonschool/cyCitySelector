@@ -11,7 +11,7 @@
       <picker disabled="{{disableDistrict}}" bindchange="selectedDistrict" value="{{index}}" range="{{arrayDistrict}}">
       <view wx:if="{{enabledDistrict}}" style="{{disableDistrict?'color: lightgray':'color: black'}}" class="picker">
         {{district}}
-      </view > </picker>
+      </view > </picker> 
   </view > 
 
   <input wx:if="{{enabledAddress}}" placeholder="请输入详细地址"/>
